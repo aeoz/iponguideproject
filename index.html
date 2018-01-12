@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iPonGuide | Helping you to reach your goal</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="//fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<link rel="icon" type="image/png"  href="assets/images/favicon.png">
+</head>
+<body>
+
+	<main class="app-container">
+	
+		<!-- Intro -->
+		<section id="intro" class="active">
+			
+			<div class="container">
+				<a href="#"><img src="assets/images/logo.png" alt="iPonGuide Logo"></a>
+
+				<h1>iPonGuide</h1>
+				<h2 class="subheading">Helping you to reach your goal</h2>
+
+				<button type="button" value="go-step1">Get Started</button>
+			</div>
+			
+	
+		</section>
+		
+		<!-- First Step -->
+		<section id="step1">
+			
+			<div class="container">
+				
+				<h3>How frequent do you <br>want to save?</h3>
+
+				<button type="button" value="days">Daily</button>
+
+				<button type="button" value="weeks">Weekly</button>
+
+				<button type="button" value="months">Monthly</button>
+
+			</div>
+
+		</section>
+
+		<!-- Second Step -->
+		<section id="step2">
+			
+			<div class="container">
+				
+				<h3>When do you want <br>to start?</h3>
+
+				<button type="button" value="today">Today</button>
+
+				<button type="button" value="week from now">Week from now</button>
+
+				<button type="button" value="Month from now">Month from now</button>
+
+				<button type="button" value="Let me set a date">Let me set a date</button>
+
+				<a href="#" class="back-button"><span>←</span> back</a>
+
+			</div>
+
+		</section>
+
+		<div class="step2-modal">
+			
+			<input type="text" id="start-date" name="start-date" placeholder="MM/DD/YYY">
+
+		</div>
+
+		<!-- 3rd Step -->
+		<section id="step3">
+			
+			<div class="container">
+				
+				<h3>How long do you <br>want to save?</h3>
+
+				<button type="button" value="Until the end of the year">Until the end of the year</button>
+
+				<button type="button" value="Year from now">Year from now</button>
+
+				<button type="button" value="Let me set a date">Let me set a date</button>
+
+				<a href="#" class="back-button"><span>←</span> back</a>
+
+			</div>
+
+		</section>
+
+		<div class="step3-modal">
+			
+			<input type="text" id="end-date" name="end-date" placeholder="MM/DD/YYY">
+
+		</div>
+
+		<!-- 4th step -->
+		<section id="step4">
+			<div class="container">
+				
+				<h3>How much do you <br>want to save <span class="frequency"></span>?</h3>
+
+				<input type="tel" id="start-amount" placeholder="amount">
+
+				<button type="button" value="go-step5">Next <span>→</span></button>
+
+				<a href="#" class="back-button"><span>←</span> back</a>
+
+			</div>
+		</section>
+
+		<!-- 5th step -->
+		<section id="step5">
+			<div class="container">
+				
+				<h3>Do you want <br><span class="frequency">daily</span> saving increase?</h3>
+
+				<div class="btn-group">
+					<button type="button" value="Yes" class="active">Yes</button>
+					<button type="button" value="No">No</button>
+				</div>
+				
+				<div class="daily-increase">
+
+					<h3>Set <span class="frequency">daily</span> increase</h3>
+					
+					<input type="tel" id="increase-amount" placeholder="amount">
+
+				</div>
+				
+
+				<button type="button" value="go-step6">Next <span>→</span></button>
+
+				<a href="#" class="back-button"><span>←</span> back</a>
+
+			</div>
+		</section>
+
+		<!-- 6th step -->
+		<section id="step6">
+			<div class="container">
+				
+				<h3>Your total savings <br>would be:</h3>
+
+				<div class="total-saving-amount">
+					P99,999,999
+				</div>
+
+				<button type="button" value="go-step7">Show Breakdown <span>→</span></button>
+
+				<a href="#" class="back-button"><span>←</span> back</a>
+
+			</div>
+		</section>
+
+
+		<!-- 7th step -->
+		<section id="step7">
+			<div class="container">
+				
+				<h3>Saving Schedule</h3>
+
+				<div class="saving-sched">
+					
+					<div class="sched-labels">
+						<div>Amount</div>
+						<div>Schedule</div>
+						<div>Subtotal</div>
+					</div>
+						
+					<div class="sched-results-wrap">
+					</div>
+					
+
+					<div class="total-saving-amount">
+						
+					</div>
+
+				</div>
+		
+				<a href="#" class="back-button"><span>←</span> back</a>
+
+			</div>
+		</section>
+
+		
+
+
+	</main>
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mask.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>
+
